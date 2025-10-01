@@ -13,7 +13,7 @@ n = st.number_input("Počet bodů:", value=8, min_value=1, step=1)
 barva = st.color_picker("Vyber barvu bodů:", "#ff0000")
 
 ---- Výpočet souřadnic bodů ----
-angles = np.linspace(0, 2np.pi, int(n), endpoint=False)
+angles = np.linspace(0, 2*np.pi, int(n), endpoint=False)
 x_points = x0 + r np.cos(angles)
 y_points = y0 + r * np.sin(angles)
 
